@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>To Do List</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>To Do</th>
+      <th>Task</th>
+      <th>Deadline</th>
+      <th>Completion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lists.each do |list| %>
+      <tr>
+        <td><%= list.name %></td>
+        <td><%= list.task %></td>
+        <td><%= list.deadline %></td>
+        <td><%= list.completion %></td>
+        <td><%= link_to 'Show', list %></td>
+        <td><%= link_to 'Edit', edit_list_path(list) %></td>
+        <td><%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New List', new_list_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  task: MyText
+  deadline: 2016-10-10
+  completion: 1
+
+two:
+  name: MyText
+  task: MyText
+  deadline: 2016-10-10
+  completion: 1

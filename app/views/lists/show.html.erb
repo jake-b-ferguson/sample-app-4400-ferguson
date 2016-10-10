@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @list.name %>
+</p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @list.task %>
+</p>
+
+<p>
+  <strong>Deadline:</strong>
+  <%= @list.deadline %>
+</p>
+
+<p>
+  <strong>Completion:</strong>
+  <%= @list.completion %>
+</p>
+
+<%= link_to 'Edit', edit_list_path(@list) %> |
+<%= link_to 'Back', lists_path %>
